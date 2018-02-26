@@ -44,7 +44,6 @@ export class FastField<
     };
 
     this.reset = (nextValues?: any) => {
-      console.log(nextValues, context.formik);
       this.setState({
         value: getIn(nextValues, props.name),
         error: getIn(context.formik.errors, props.name),
